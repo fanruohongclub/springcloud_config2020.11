@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: starter-openfeign
+    name: starter-openfeign #指定服务名
 
 eureka:
   client:
@@ -14,3 +14,7 @@ eureka:
     # 设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址
     service-url:
       defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true #将自己的ip地址注册到Eureka服务中
+    ip-address: ${IP_ADDRESS:127.0.0.1}
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
