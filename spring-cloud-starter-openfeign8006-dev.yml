@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: starter-openfeign
+	
+ribbon.eureka.enable: true
 
 eureka:
   client:
