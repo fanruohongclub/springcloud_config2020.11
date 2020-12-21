@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: starter-openfeign-serviceClient
+    name: starter-openfeign-serverClient
 	
 ribbon: 
   eureka: 
