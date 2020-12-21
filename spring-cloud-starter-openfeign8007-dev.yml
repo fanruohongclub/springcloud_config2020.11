@@ -5,7 +5,9 @@ spring:
   application:
     name: starter-openfeign #指定服务名
 	
-ribbon.eureka.enable: true
+ribbon: 
+  eureka: 
+   enable: true
 
 eureka:
   client:
